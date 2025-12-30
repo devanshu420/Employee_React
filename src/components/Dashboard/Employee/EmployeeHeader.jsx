@@ -20,9 +20,9 @@ const EmployeeHeader = ({ username = "Devanshu" }) => {
 
         {/* Right: Logout Button */}
         <button
-          className="flex items-center gap-2 px-4 py-2 rounded-lg bg-linear-to-r from-red-600 to-pink-600 text-white cursor-pointer font-medium hover:opacity-90 transition shadow-lg"
+          className="flex items-center gap-2 px-4 py-2 rounded-lg cursor-pointer active:scale-95 bg-linear-to-r bg-red-600 text-white cufont-medium hover:opacity-90 transition shadow-lg"
         >
-          🚪 Logout
+           Logout
         </button>
       </div>
     </header>

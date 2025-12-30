@@ -1,6 +1,6 @@
 import React from 'react'
 import Login from './components/Auth/Login'
-import Employee from './components/Dashboard/Employee'
+import Employee from './components/Dashboard/Employee/Employee'
 
 const App = () => {
   return (
