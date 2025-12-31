@@ -1,7 +1,7 @@
 import React from 'react'
-import EmployeeHeader from './EmployeeHeader'
+import EmployeeHeader from '../../../Pages/Header'
 import TaskListNumber from './TaskListNumber'
-import TaskList from '../tasklist/TaskList'
+import TaskList from '../../Tasklist/TaskList'
 
 const Employee = () => {
   return (

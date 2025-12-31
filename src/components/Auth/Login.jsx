@@ -1,22 +1,27 @@
 import { useState } from "react";
-import { MailIcon , Eye , EyeOff , LockKeyhole  } from "lucide-react";
-const Login = () => {
+import { MailIcon, Eye, EyeOff, LockKeyhole } from "lucide-react";
+
+
+const Login = ({ handleLogin }) => {
+
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [showPassword, setShowPassword] = useState(false);
 
 
-    const submitHandler = () => {
-        console.log("Form Submitted");
-        console.log("Email is : ", email);
-        console.log("Password is : ", password);
+    const submitHandler = (e) => {
+        e.preventDefault()
+        handleLogin(email,password)
+        
     };
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-gray-900 to-gray-800 px-4">
             {/* FORM WRAPPER */}
             <form
-                onSubmit={submitHandler}
+                onSubmit={(e) => {
+                    submitHandler(e)
+                }}
                 className="w-full max-w-md bg-gray-900/90 backdrop-blur-xl rounded-2xl shadow-2xl p-8 relative overflow-hidden border border-gray-800"
             >
                 {/* Decorative Gradient */}

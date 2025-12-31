@@ -1,4 +1,4 @@
-const EmployeeHeader = ({ username = "Devanshu" }) => {
+const Header = ({ username = "Devanshu" }) => {
   return (
     <header className="bg-gray-900/90 backdrop-blur-xl rounded-2xl shadow-2xl border border-gray-800 px-6 py-4 mb-6">
 
@@ -29,4 +29,4 @@ const EmployeeHeader = ({ username = "Devanshu" }) => {
   );
 };
 
-export default EmployeeHeader;
+export default Header;
