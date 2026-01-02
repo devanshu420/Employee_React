@@ -1,4 +1,8 @@
 const Header = ({ username = "Devanshu" }) => {
+
+  const logOutHandler = () => {
+    localStorage.removeItem("loggedInUser")
+}
   return (
     <header className="bg-gray-900/90 backdrop-blur-xl rounded-2xl shadow-2xl border border-gray-800 px-6 py-4 mb-6">
 
@@ -20,6 +24,7 @@ const Header = ({ username = "Devanshu" }) => {
 
         {/* Right: Logout Button */}
         <button
+       
           className="flex items-center gap-2 px-4 py-2 rounded-lg cursor-pointer active:scale-95 bg-linear-to-r bg-red-600 text-white cufont-medium hover:opacity-90 transition shadow-lg"
         >
            Logout
